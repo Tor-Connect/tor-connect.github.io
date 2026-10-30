@@ -11,6 +11,7 @@ window.I18N.en = {
   hero_sub: 'Tor Connect sends your browser through Tor, so the sites your network blocks load again.',
   btn_add_chrome: 'Add to Chrome',
   btn_firefox: 'Firefox · coming soon',
+  btn_add_firefox: 'Add to Firefox',
   mockup_status_off: 'Not connected',
   mockup_status_connecting: 'Connecting\u2026',
   mockup_status_on: 'Connected',
@@ -70,7 +71,7 @@ window.I18N.en = {
     { q: 'How is this different from a VPN?', a: 'A VPN sends your traffic through one company\'s server. Tor Connect sends your browser traffic through the Tor network, which is run by volunteers.' },
     { q: 'Why do I need a separate setup app?', a: 'Browser extensions cannot install or start Tor on their own. The setup app installs Tor on your computer and connects it to the extension. You only do this once.' },
     { q: 'What are Snowflake and bridges?', a: 'Both help you reach Tor when it is blocked. Snowflake needs nothing from you. Bridges are addresses you add yourself, and Auto-select tries them for you.' },
-    { q: 'Does it work in Firefox?', a: 'Chrome today. A Firefox version is planned.' }
+    { q: 'Does it work in Firefox?', a: 'Yes — now available for both Chrome and Firefox.' }
   ],
   cta_title: 'Open the web.',
   footer_setup: 'Setup guide',

@@ -11,6 +11,7 @@ window.I18N.de = {
   hero_sub: 'Tor Connect leitet Ihren Browser über Tor, damit gesperrte Seiten wieder laden.',
   btn_add_chrome: 'Zu Chrome hinzufügen',
   btn_firefox: 'Firefox · demnächst',
+  btn_add_firefox: 'Zu Firefox hinzufügen',
   mockup_status_off: 'Nicht verbunden',
   mockup_status_connecting: 'Verbinde…',
   mockup_status_on: 'Verbunden',
@@ -70,7 +71,7 @@ window.I18N.de = {
     { q: 'Wie unterscheidet sich das von einem VPN?', a: 'Ein VPN sendet Ihren Datenverkehr über den Server eines Unternehmens. Tor Connect leitet Ihren Browser-Traffic über das Tor-Netzwerk, das von Freiwilligen betrieben wird.' },
     { q: 'Warum brauche ich eine separate Setup-App?', a: 'Browsererweiterungen können Tor nicht installieren. Die Setup-App erledigt das einmalig.' },
     { q: 'Was sind Snowflake und Bridges?', a: 'Beide helfen, Tor bei Sperrung zu erreichen. Snowflake benötigt nichts von Ihnen. Bridges sind Adressen, die Sie selbst hinzufügen.' },
-    { q: 'Funktioniert es mit Firefox?', a: 'Heute Chrome. Eine Firefox-Version ist geplant.' }
+    { q: 'Funktioniert es mit Firefox?', a: 'Ja — jetzt für Chrome und Firefox verfügbar.' }
   ],
   cta_title: 'Das Web öffnen.',
   footer_setup: 'Einrichtungsanleitung',

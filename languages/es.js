@@ -11,6 +11,7 @@ window.I18N.es = {
   hero_sub: 'Tor Connect envía tu navegador a través de Tor para que los sitios bloqueados vuelvan a cargar.',
   btn_add_chrome: 'Añadir a Chrome',
   btn_firefox: 'Firefox · próximamente',
+  btn_add_firefox: 'Añadir a Firefox',
   mockup_status_off: 'No conectado',
   mockup_status_connecting: 'Conectando…',
   mockup_status_on: 'Conectado',
@@ -70,7 +71,7 @@ window.I18N.es = {
     { q: '¿En qué se diferencia de una VPN?', a: 'Una VPN envía tu tráfico por el servidor de una empresa. Tor Connect envía el tráfico de tu navegador por la red Tor, gestionada por voluntarios.' },
     { q: '¿Por qué necesito una app de configuración separada?', a: 'Las extensiones no pueden instalar Tor. La app lo hace una sola vez.' },
     { q: '¿Qué son Snowflake y los puentes?', a: 'Ambos ayudan a acceder a Tor cuando está bloqueado. Snowflake no requiere nada. Los puentes son direcciones que añades tú mismo.' },
-    { q: '¿Funciona en Firefox?', a: 'Hoy Chrome. Está prevista una versión para Firefox.' }
+    { q: '¿Funciona en Firefox?', a: 'Sí — ya disponible para Chrome y Firefox.' }
   ],
   cta_title: 'Abre la web.',
   footer_setup: 'Guía de configuración',

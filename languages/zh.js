@@ -11,6 +11,7 @@ window.I18N.zh = {
   hero_sub: 'Tor Connect 通过 Tor 发送您的浏览器流量，让被封锁的网站重新加载。',
   btn_add_chrome: '添加到 Chrome',
   btn_firefox: 'Firefox · 即将推出',
+  btn_add_firefox: '添加到 Firefox',
   mockup_status_off: '未连接',
   mockup_status_connecting: '连接中…',
   mockup_status_on: '已连接',
@@ -70,7 +71,7 @@ window.I18N.zh = {
     { q: '这与 VPN 有何不同？', a: 'VPN 通过一家公司的服务器发送您的流量。Tor Connect 通过由志愿者运营的 Tor 网络发送您的浏览器流量。' },
     { q: '为什么需要独立的设置应用？', a: '浏览器扩展无法安装 Tor。设置应用只需执行一次。' },
     { q: 'Snowflake 和桥接是什么？', a: '两者都帮助您在 Tor 被封锁时访问它。Snowflake 无需任何操作。桥接是您自己添加的地址。' },
-    { q: '支持 Firefox 吗？', a: '目前支持 Chrome，Firefox 版本计划中。' }
+    { q: '支持 Firefox 吗？', a: '支持 — 现已同时支持 Chrome 和 Firefox。' }
   ],
   cta_title: '打开网络。',
   footer_setup: '设置指南',
