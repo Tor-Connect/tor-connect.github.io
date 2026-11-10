@@ -266,7 +266,12 @@
     /* text copy only occupies left ~45% so it never reaches the absolute decorative panel */
     .card-body { margin-top: 10px; font-size: 15px; line-height: 1.5; color: var(--text-muted); max-width: 45%; }
     .card-narrow .card-body { max-width: 100%; }
-    /* RTL: flip the text-width constraint and the decorative panel to the logical start side */
+    /* The .card-abs panels are decorative UI mockups with LTR content (domain names,
+       numbers, code font). Lock their internal direction to LTR so flex layout,
+       text alignment, and icon order are never mirrored in RTL languages. */
+    .card-abs { direction: ltr; }
+    /* RTL: the card-body text flows from the right. Push it away from the logical
+       start (right) edge so it does not collide with the panel now on the left. */
     [dir="rtl"] .card-wide .card-body { max-width: 100%; padding-inline-start: 55%; }
     [dir="rtl"] .card-wide .card-abs { right: auto !important; left: 28px !important; }
     /* card-abs inline color overrides via CSS vars */
