@@ -266,14 +266,19 @@
     /* text copy only occupies left ~45% so it never reaches the absolute decorative panel */
     .card-body { margin-top: 10px; font-size: 15px; line-height: 1.5; color: var(--text-muted); max-width: 45%; }
     .card-narrow .card-body { max-width: 100%; }
-    /* The .card-abs panels are decorative UI mockups with LTR content (domain names,
-       numbers, code font). Lock their internal direction to LTR so flex layout,
-       text alignment, and icon order are never mirrored in RTL languages. */
-    .card-abs { direction: ltr; }
-    /* RTL: the card-body text flows from the right. Push it away from the logical
-       start (right) edge so it does not collide with the panel now on the left. */
-    [dir="rtl"] .card-wide .card-body { max-width: 100%; padding-inline-start: 55%; }
-    [dir="rtl"] .card-wide .card-abs { right: auto !important; left: 28px !important; }
+    /* Feature cards have a fixed visual layout (text left, panel right/bottom).
+       In RTL languages, lock every card to LTR so absolute panels and flex
+       rows stay in their designed positions. Re-apply RTL only to the human-
+       readable text nodes so translated text renders correctly.
+       card-label/title/body are inline/block elements — give them an explicit
+       width so text-align:right works across the full text column. */
+    [dir="rtl"] .card { direction: ltr; }
+    [dir="rtl"] .card-label,
+    [dir="rtl"] .card-title,
+    [dir="rtl"] .card-body { direction: rtl; text-align: right; display: block; width: 45%; }
+    [dir="rtl"] .card-narrow .card-label,
+    [dir="rtl"] .card-narrow .card-title,
+    [dir="rtl"] .card-narrow .card-body { width: 100%; }
     /* card-abs inline color overrides via CSS vars */
     .card-abs [style*="background:#10291C"] { background: var(--bg-green) !important; }
     .card-abs [style*="background:#0E1412"] { background: var(--bg-raised) !important; }
