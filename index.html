@@ -266,6 +266,9 @@
     /* text copy only occupies left ~45% so it never reaches the absolute decorative panel */
     .card-body { margin-top: 10px; font-size: 15px; line-height: 1.5; color: var(--text-muted); max-width: 45%; }
     .card-narrow .card-body { max-width: 100%; }
+    /* RTL: flip the text-width constraint and the decorative panel to the logical start side */
+    [dir="rtl"] .card-wide .card-body { max-width: 100%; padding-inline-start: 55%; }
+    [dir="rtl"] .card-wide .card-abs { right: auto !important; left: 28px !important; }
     /* card-abs inline color overrides via CSS vars */
     .card-abs [style*="background:#10291C"] { background: var(--bg-green) !important; }
     .card-abs [style*="background:#0E1412"] { background: var(--bg-raised) !important; }
