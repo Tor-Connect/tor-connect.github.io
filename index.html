@@ -8,7 +8,7 @@
   <meta property="og:title" content="Tor Connect — The open web, back in one tap">
   <meta property="og:description" content="Tor Connect sends your browser through Tor, so the sites your network blocks load again.">
   <meta property="og:type" content="website">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><g fill='none' stroke='%232BD576' stroke-width='10' stroke-linecap='round'><path d='M20 88 H108'/><path d='M20 88 A44 44 0 0 1 108 88'/><path d='M35 88 A29 29 0 0 1 93 88'/><path d='M50 88 A14 14 0 0 1 78 88'/></g></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><g fill='none' stroke='%23A9B2FF' stroke-width='10' stroke-linecap='round'><path d='M20 88 H108'/><path d='M20 88 A44 44 0 0 1 108 88'/><path d='M35 88 A29 29 0 0 1 93 88'/><path d='M50 88 A14 14 0 0 1 78 88'/></g></svg>">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Vazirmatn:wght@500;600&display=swap">
   <script src="languages/en.js"></script>
   <script src="languages/fa.js"></script>
@@ -22,60 +22,64 @@
   <style>
     /* ── Color tokens ───────────────────────────── */
     :root {
-      --bg:           #080C0B;
-      --bg-card:      #0C1210;
-      --bg-raised:    #0E1412;
-      --bg-deep:      #080C0B;
-      --bg-green:     #10291C;
-      --border:       #1D2421;
-      --border-md:    #262D2B;
-      --border-hi:    #2A3230;
-      --border-green: #1C5B3B;
-      --text:         #EAF1EE;
-      --text-muted:   #8A948F;
-      --text-dim:     #6B7771;
-      --text-mid:     #A9B3AE;
-      --accent:       #2BD576;
-      --accent-dk:    #22c268;
-      --accent-bg:    #06150D;
-      --accent-text:  #06150D;
-      --step-num:     #1C5B3B;
-      --warn-bg:      #1A1407;
-      --warn-bd:      #6B4A12;
-      --warn-text:    #FFC24D;
-      --warn-body:    #C9B27A;
-      --chip-bg:      #121816;
-      --cta-grad:     linear-gradient(180deg,#0F1B15,#0C1210);
+      --bg:           #09090B;
+      --bg-card:      #0F0F12;
+      --bg-raised:    #151518;
+      --bg-deep:      #09090B;
+      --bg-green:     #17172B;
+      --border:       #1C1C21;
+      --border-md:    #32323C;
+      --border-hi:    #3E3E4A;
+      --border-green: #3E4478;
+      --text:         #E6ECFF;
+      --text-muted:   #92929F;
+      --text-dim:     #7C7C8C;
+      --text-mid:     #B4B4C0;
+      --accent:       #A9B2FF;
+      --accent-dk:    #8F9AFF;
+      --accent-bg:    #17172B;
+      --accent-text:  #0A0A0F;
+      --step-num:     #5C5C6C;
+      --warn-bg:      #2E2C26;
+      --warn-bd:      #6B5938;
+      --warn-text:    #FFC46B;
+      --warn-body:    #D4BD91;
+      --chip-bg:      #17172B;
+      --cta-grad:     linear-gradient(180deg,#17172B,#0F0F12);
+      --glow-color:   rgba(169,178,255,.18);
+      --connected-gradient: linear-gradient(90deg,#8FE9FF,#A9B2FF,#C2A9FF,#EDB6EE);
       --shadow:       rgba(0,0,0,.55);
-      --route-shadow: #080C0B;
+      --route-shadow: #09090B;
     }
     [data-theme="light"] {
-      --bg:        #F4F7F5;
+      --bg:        #F6F6F9;
       --bg-card:   #FFFFFF;
-      --bg-raised: #EDF2EF;
-      --bg-deep:   #E6EDE9;
-      --bg-green:  #DDF4E8;
-      --border:    #D4DDD8;
-      --border-md: #C2CEC8;
-      --border-hi: #B8C8BF;
-      --border-green: #5DBF8A;
-      --text:      #0D1F17;
-      --text-muted:#4A5E54;
-      --text-dim:  #6B8077;
-      --text-mid:  #3A5248;
-      --accent:      #1DA85A;
-      --accent-dk:   #178A49;
-      --accent-bg:   #DDF4E8;
-      --accent-text: #0A2E18;
-      --step-num:  #5DBF8A;
-      --warn-bg:   #FFF8EC;
-      --warn-bd:   #E8C070;
-      --warn-text: #8A5A00;
-      --warn-body: #7A5A20;
-      --chip-bg:   #EDF2EF;
-      --cta-grad:  linear-gradient(180deg,#E8F5EE,#FFFFFF);
+      --bg-raised: #EFEFF5;
+      --bg-deep:   #E8E8F0;
+      --bg-green:  #EFEFF5;
+      --border:    #E8E8F0;
+      --border-md: #CBCBD6;
+      --border-hi: #B8B8C8;
+      --border-green: #CBCBD6;
+      --text:      #1B1B26;
+      --text-muted:#6C6C80;
+      --text-dim:  #7C7C8C;
+      --text-mid:  #62627A;
+      --accent:      #5869E8;
+      --accent-dk:   #4757D2;
+      --accent-bg:   #EFEFF5;
+      --accent-text: #FFFFFF;
+      --step-num:  #A6A6B4;
+      --warn-bg:   #FFF4E0;
+      --warn-bd:   #E8C987;
+      --warn-text: #8B5200;
+      --warn-body: #7A5600;
+      --chip-bg:   #EFEFF5;
+      --cta-grad:  linear-gradient(180deg,#EFEFF5,#FFFFFF);
+      --glow-color: rgba(88,105,232,.14);
+      --connected-gradient: linear-gradient(90deg,#0FA3C6,#5B6CF0,#8D5CF0,#D45FCF);
       --shadow:    rgba(0,0,0,.10);
-      --route-shadow: #F4F7F5;
+      --route-shadow: #F6F6F9;
     }
 
     *, *::before, *::after { box-sizing: border-box; }
@@ -99,7 +103,7 @@
     .glow {
       position: absolute; right: -240px; top: -260px;
       width: 1000px; height: 1000px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(43,213,118,.2), rgba(43,213,118,0) 65%);
+      background: radial-gradient(circle, var(--glow-color), transparent 65%);
       opacity: 0; transition: opacity 1.2s ease; pointer-events: none;
     }
     .glow.on { opacity: 1; }
@@ -200,6 +204,7 @@
     }
     .ring-btn.connecting .pulse-ring { display: block; }
     .status-text { font-size: 22px; font-weight: 600; letter-spacing: -.01em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .status-text.connected { color: transparent; background-image: var(--connected-gradient); background-clip: text; -webkit-background-clip: text; }
     .status-sub { margin-top: 3px; font-size: 14px; color: var(--text-muted); }
     .connect-btn {
       flex: none; height: 48px; padding: 0 22px;
@@ -280,21 +285,21 @@
     [dir="rtl"] .card-narrow .card-title,
     [dir="rtl"] .card-narrow .card-body { width: 100%; }
     /* card-abs inline color overrides via CSS vars */
-    .card-abs [style*="background:#10291C"] { background: var(--bg-green) !important; }
-    .card-abs [style*="background:#0E1412"] { background: var(--bg-raised) !important; }
-    .card-abs [style*="background:#1A1407"] { background: var(--warn-bg) !important; }
-    .card-abs [style*="background:#2BD576"] { background: var(--accent) !important; color: var(--accent-bg) !important; }
-    .card-abs [style*="border:1.5px solid #2BD576"] { border-color: var(--accent) !important; }
-    .card-abs [style*="border:1px solid #1D2421"] { border-color: var(--border) !important; }
-    .card-abs [style*="border:1px solid #1C5B3B"] { border-color: var(--border-green) !important; }
-    .card-abs [style*="border:1.5px solid #262D2B"] { border-color: var(--border-md) !important; }
-    .card-abs [style*="border:1px solid #6B4A12"] { border-color: var(--warn-bd) !important; }
-    .card-abs [style*="color:#2BD576"] { color: var(--accent) !important; }
-    .card-abs [style*="color:#A9B3AE"] { color: var(--text-mid) !important; }
-    .card-abs [style*="color:#8A948F"] { color: var(--text-muted) !important; }
-    .card-abs [style*="color:#6B7771"] { color: var(--text-dim) !important; }
-    .card-abs [style*="color:#FFC24D"] { color: var(--warn-text) !important; }
-    .card-abs svg[stroke="#A9B3AE"] { stroke: var(--text-mid) !important; }
+    .card-abs [style*="background:var(--bg-green)"] { background: var(--bg-green) !important; }
+    .card-abs [style*="background:var(--bg-raised)"] { background: var(--bg-raised) !important; }
+    .card-abs [style*="background:var(--warn-bg)"] { background: var(--warn-bg) !important; }
+    .card-abs [style*="background:var(--accent)"] { background: var(--accent) !important; color: var(--accent-bg) !important; }
+    .card-abs [style*="border:1.5px solid var(--accent)"] { border-color: var(--accent) !important; }
+    .card-abs [style*="border:1px solid var(--border)"] { border-color: var(--border) !important; }
+    .card-abs [style*="border:1px solid var(--border-green)"] { border-color: var(--border-green) !important; }
+    .card-abs [style*="border:1.5px solid var(--border-md)"] { border-color: var(--border-md) !important; }
+    .card-abs [style*="border:1px solid var(--warn-bd)"] { border-color: var(--warn-bd) !important; }
+    .card-abs [style*="color:var(--accent)"] { color: var(--accent) !important; }
+    .card-abs [style*="color:var(--text-mid)"] { color: var(--text-mid) !important; }
+    .card-abs [style*="color:var(--text-muted)"] { color: var(--text-muted) !important; }
+    .card-abs [style*="color:var(--text-dim)"] { color: var(--text-dim) !important; }
+    .card-abs [style*="color:var(--warn-text)"] { color: var(--warn-text) !important; }
+    .card-abs svg[stroke="var(--text-mid)"] { stroke: var(--text-mid) !important; }
 
     /* ── Setup ──────────────────────────────────── */
     #setup { position: relative; margin-top: 120px; }
@@ -498,7 +503,7 @@
     <!-- ── Nav ────────────────────────────────────── -->
     <nav>
       <div class="nav-brand">
-        <svg viewBox="0 0 128 128" width="30" height="30" aria-hidden="true"><g fill="none" stroke="#2BD576" stroke-width="10" stroke-linecap="round"><path d="M20 88 H108"/><path d="M20 88 A44 44 0 0 1 108 88"/><path d="M35 88 A29 29 0 0 1 93 88"/><path d="M50 88 A14 14 0 0 1 78 88"/></g></svg>
+        <svg viewBox="0 0 128 128" width="30" height="30" aria-hidden="true"><g fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round"><path d="M20 88 H108"/><path d="M20 88 A44 44 0 0 1 108 88"/><path d="M35 88 A29 29 0 0 1 93 88"/><path d="M50 88 A14 14 0 0 1 78 88"/></g></svg>
         <span>Tor Connect</span>
       </div>
       <div class="nav-links">
@@ -552,7 +557,7 @@
             <!-- off icon -->
             <svg id="iconOff" viewBox="0 0 128 128" width="50" height="50" aria-hidden="true"><g fill="none" stroke="#7D868F" stroke-width="10" stroke-linecap="round"><path d="M20 88 H48"/><path d="M80 88 H108"/><path d="M20 88 A44 44 0 0 1 108 88" stroke-dasharray="54 30 54"/><path d="M35 88 A29 29 0 0 1 93 88" stroke-dasharray="33.5 24 33.5"/><path d="M50 88 A14 14 0 0 1 78 88" stroke-dasharray="14 16 14"/></g></svg>
             <!-- on icon -->
-            <svg id="iconOn" viewBox="0 0 128 128" width="50" height="50" aria-hidden="true" style="display:none"><g fill="none" stroke="#2BD576" stroke-width="10" stroke-linecap="round"><path d="M20 88 H108"/><path d="M20 88 A44 44 0 0 1 108 88"/><path d="M35 88 A29 29 0 0 1 93 88"/><path d="M50 88 A14 14 0 0 1 78 88"/></g></svg>
+            <svg id="iconOn" viewBox="0 0 128 128" width="50" height="50" aria-hidden="true" style="display:none"><g fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round"><path d="M20 88 H108"/><path d="M20 88 A44 44 0 0 1 108 88"/><path d="M35 88 A29 29 0 0 1 93 88"/><path d="M50 88 A14 14 0 0 1 78 88"/></g></svg>
           </button>
           <div style="flex:1;min-width:0">
             <div class="status-text" id="statusText">Not connected</div>
@@ -572,7 +577,7 @@
       <!-- Desktop route diagram -->
       <div class="route-wrap">
         <svg viewBox="0 0 1280 260" width="1280" height="260" aria-hidden="true" class="route-line">
-          <path class="an" d="M170 70 H1110" stroke="#2BD576" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 8" fill="none" style="animation:flow 1.1s linear infinite"></path>
+          <path class="an" d="M170 70 H1110" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 8" fill="none" style="animation:flow 1.1s linear infinite"></path>
         </svg>
         <!-- Your browser -->
         <span class="route-node" style="left:120px">
@@ -584,7 +589,7 @@
         </div>
         <!-- A bridge -->
         <span class="route-node" style="left:440px">
-          <svg viewBox="0 0 128 128" width="54" height="54" aria-hidden="true"><g fill="none" stroke="#2BD576" stroke-width="10" stroke-linecap="round"><path d="M20 88 H108"/><path d="M20 88 A44 44 0 0 1 108 88"/><path d="M35 88 A29 29 0 0 1 93 88"/><path d="M50 88 A14 14 0 0 1 78 88"/></g></svg>
+          <svg viewBox="0 0 128 128" width="54" height="54" aria-hidden="true"><g fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round"><path d="M20 88 H108"/><path d="M20 88 A44 44 0 0 1 108 88"/><path d="M35 88 A29 29 0 0 1 93 88"/><path d="M50 88 A14 14 0 0 1 78 88"/></g></svg>
         </span>
         <div class="route-lbl" style="left:360px">
           <div class="route-lbl-name" data-i18n="route_bridge_name">A bridge</div>
@@ -616,7 +621,7 @@
           <div><div class="route-step-name" data-i18n="route_browser_name">Your browser</div><div class="route-step-text" data-i18n="route_browser_text">The extension sends your traffic out.</div></div>
         </div>
         <div class="route-step">
-          <span class="route-step-icon"><svg viewBox="0 0 128 128" width="30" height="30" aria-hidden="true"><g fill="none" stroke="#2BD576" stroke-width="10" stroke-linecap="round"><path d="M20 88 H108"/><path d="M20 88 A44 44 0 0 1 108 88"/><path d="M35 88 A29 29 0 0 1 93 88"/><path d="M50 88 A14 14 0 0 1 78 88"/></g></svg></span>
+          <span class="route-step-icon"><svg viewBox="0 0 128 128" width="30" height="30" aria-hidden="true"><g fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round"><path d="M20 88 H108"/><path d="M20 88 A44 44 0 0 1 108 88"/><path d="M35 88 A29 29 0 0 1 93 88"/><path d="M50 88 A14 14 0 0 1 78 88"/></g></svg></span>
           <span class="route-step-line"></span>
           <div><div class="route-step-name" data-i18n="route_bridge_name">A bridge</div><div class="route-step-text" data-i18n="route_bridge_text">A bridge or Snowflake proxy gets you past the filter.</div></div>
         </div>
@@ -644,13 +649,13 @@
             <div class="card-title" data-i18n="feat_two_title">Snowflake or bridges.</div>
             <div class="card-body" data-i18n="feat_two_body">Start with Snowflake and nothing else to do. Add your own bridge lines when you need them.</div>
             <div class="card-abs" style="position:absolute;right:28px;top:36px;display:flex;flex-direction:column;gap:12px;width:280px">
-              <div style="display:flex;align-items:center;gap:14px;height:76px;padding:0 18px;border-radius:20px;border:1.5px solid #2BD576;background:#10291C">
-                <span style="color:#2BD576"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M4.2 7.5l15.6 9M19.8 7.5l-15.6 9"/><path d="M9.5 4.5L12 7l2.5-2.5M9.5 19.5L12 17l2.5 2.5"/></svg></span>
-                <div><div style="font-size:17px;font-weight:600" data-i18n="feat_snowflake_name">Snowflake</div><div style="font-size:13px;color:#A9B3AE" data-i18n="feat_snowflake_sub">Nothing to set up</div></div>
+              <div style="display:flex;align-items:center;gap:14px;height:76px;padding:0 18px;border-radius:20px;border:1.5px solid var(--accent);background:var(--bg-green)">
+                <span style="color:var(--accent)"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M4.2 7.5l15.6 9M19.8 7.5l-15.6 9"/><path d="M9.5 4.5L12 7l2.5-2.5M9.5 19.5L12 17l2.5 2.5"/></svg></span>
+                <div><div style="font-size:17px;font-weight:600" data-i18n="feat_snowflake_name">Snowflake</div><div style="font-size:13px;color:var(--text-mid)" data-i18n="feat_snowflake_sub">Nothing to set up</div></div>
               </div>
-              <div style="display:flex;align-items:center;gap:14px;height:76px;padding:0 18px;border-radius:20px;border:1.5px solid #262D2B;background:#0E1412">
-                <span style="color:#A9B3AE"><svg viewBox="0 0 128 128" width="34" height="34" aria-hidden="true"><g fill="none" stroke="#A9B3AE" stroke-width="10" stroke-linecap="round"><path d="M20 88 H108"/><path d="M20 88 A44 44 0 0 1 108 88"/><path d="M35 88 A29 29 0 0 1 93 88"/><path d="M50 88 A14 14 0 0 1 78 88"/></g></svg></span>
-                <div><div style="font-size:17px;font-weight:600" data-i18n="feat_bridge_name">Bridge lines</div><div style="font-size:13px;color:#8A948F" data-i18n="feat_bridge_sub">Add your own bridges</div></div>
+              <div style="display:flex;align-items:center;gap:14px;height:76px;padding:0 18px;border-radius:20px;border:1.5px solid var(--border-md);background:var(--bg-raised)">
+                <span style="color:var(--text-mid)"><svg viewBox="0 0 128 128" width="34" height="34" aria-hidden="true"><g fill="none" stroke="var(--text-mid)" stroke-width="10" stroke-linecap="round"><path d="M20 88 H108"/><path d="M20 88 A44 44 0 0 1 108 88"/><path d="M35 88 A29 29 0 0 1 93 88"/><path d="M50 88 A14 14 0 0 1 78 88"/></g></svg></span>
+                <div><div style="font-size:17px;font-weight:600" data-i18n="feat_bridge_name">Bridge lines</div><div style="font-size:13px;color:var(--text-muted)" data-i18n="feat_bridge_sub">Add your own bridges</div></div>
               </div>
             </div>
           </div>
@@ -660,13 +665,13 @@
             <div class="card-title" data-i18n="feat_auto_title">It finds a bridge that works.</div>
             <div class="card-body" data-i18n="feat_auto_body">Tries your saved bridges in order, and switches if one gets blocked.</div>
             <div class="card-abs" style="position:absolute;left:28px;right:28px;bottom:28px;display:flex;flex-direction:column;gap:8px">
-              <div style="display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;border-radius:14px;border:1px solid #1D2421;background:#0E1412;font-size:14px;color:#6B7771">
+              <div style="display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;border-radius:14px;border:1px solid var(--border);background:var(--bg-raised);font-size:14px;color:var(--text-dim)">
                 <span style="width:8px;height:8px;border-radius:50%;background:#FFB020"></span>
                 <span style="flex:1;text-decoration:line-through">DE Bridge 9</span>blocked
               </div>
-              <div style="display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;border-radius:14px;border:1.5px solid #2BD576;background:#10291C;font-size:14px;font-weight:600">
-                <span style="width:8px;height:8px;border-radius:50%;background:#2BD576"></span>
-                <span style="flex:1">AU Bridge 8</span><span style="font-size:12px;font-weight:500;color:#2BD576">switched</span>
+              <div style="display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;border-radius:14px;border:1.5px solid var(--accent);background:var(--bg-green);font-size:14px;font-weight:600">
+                <span style="width:8px;height:8px;border-radius:50%;background:var(--accent)"></span>
+                <span style="flex:1">AU Bridge 8</span><span style="font-size:12px;font-weight:500;color:var(--accent)">switched</span>
               </div>
             </div>
           </div>
@@ -678,15 +683,15 @@
             <div class="card-title" data-i18n="feat_stats_title">Live traffic at a glance.</div>
             <div class="card-body" data-i18n="feat_stats_body">Download, upload and memory use, one pull-up away.</div>
             <div class="card-abs" style="position:absolute;left:28px;right:28px;bottom:28px;display:flex;gap:12px">
-              <div style="flex:1;padding:14px 16px;border-radius:16px;border:1px solid #1D2421;background:#0E1412">
-                <div style="font-size:13px;color:#8A948F">Download</div>
+              <div style="flex:1;padding:14px 16px;border-radius:16px;border:1px solid var(--border);background:var(--bg-raised)">
+                <div style="font-size:13px;color:var(--text-muted)">Download</div>
                 <div style="margin-top:4px;font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:500">60.6 MB</div>
-                <div style="margin-top:2px;font-size:12px;color:#2BD576">180 KB/s</div>
+                <div style="margin-top:2px;font-size:12px;color:var(--accent)">180 KB/s</div>
               </div>
-              <div style="flex:1;padding:14px 16px;border-radius:16px;border:1px solid #1D2421;background:#0E1412">
-                <div style="font-size:13px;color:#8A948F">Upload</div>
+              <div style="flex:1;padding:14px 16px;border-radius:16px;border:1px solid var(--border);background:var(--bg-raised)">
+                <div style="font-size:13px;color:var(--text-muted)">Upload</div>
                 <div style="margin-top:4px;font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:500">11.0 MB</div>
-                <div style="margin-top:2px;font-size:12px;color:#2BD576">24 KB/s</div>
+                <div style="margin-top:2px;font-size:12px;color:var(--accent)">24 KB/s</div>
               </div>
             </div>
           </div>
@@ -696,19 +701,19 @@
             <div class="card-title" data-i18n="feat_check_title">Know your sites still load.</div>
             <div class="card-body" data-i18n="feat_check_body">Tor Connect tests a few sites in the background and offers a fix when one is blocked.</div>
             <div class="card-abs" style="position:absolute;right:28px;top:36px;width:300px;display:flex;flex-direction:column;gap:8px">
-              <div style="display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;border-radius:14px;border:1px solid #1C5B3B;background:#10291C;font-family:'IBM Plex Mono',monospace;font-size:13px">
+              <div style="display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;border-radius:14px;border:1px solid var(--border-green);background:var(--bg-green);font-family:'IBM Plex Mono',monospace;font-size:13px">
                 <span style="flex:1">wikipedia.org</span>
-                <span style="color:#2BD576"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+                <span style="color:var(--accent)"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
               </div>
-              <div style="display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;border-radius:14px;border:1px solid #1C5B3B;background:#10291C;font-family:'IBM Plex Mono',monospace;font-size:13px">
+              <div style="display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;border-radius:14px;border:1px solid var(--border-green);background:var(--bg-green);font-family:'IBM Plex Mono',monospace;font-size:13px">
                 <span style="flex:1">bbc.com</span>
-                <span style="color:#2BD576"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+                <span style="color:var(--accent)"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
               </div>
-              <div style="display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;border-radius:14px;border:1px solid #6B4A12;background:#1A1407;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#FFC24D">
+              <div style="display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;border-radius:14px;border:1px solid var(--warn-bd);background:var(--warn-bg);font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--warn-text)">
                 <span style="flex:1">youtube.com</span>
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4L3 20h18L12 4z"/><path d="M12 10v4M12 17.2v.1"/></svg>
               </div>
-              <div style="display:flex;align-items:center;justify-content:center;height:44px;border-radius:22px;background:#2BD576;color:#06150D;font-size:14px;font-weight:600" data-i18n="feat_try_bridge">Try next bridge</div>
+              <div style="display:flex;align-items:center;justify-content:center;height:44px;border-radius:22px;background:var(--accent);color:var(--accent-text);font-size:14px;font-weight:600" data-i18n="feat_try_bridge">Try next bridge</div>
             </div>
           </div>
         </div>
@@ -810,7 +815,7 @@
     <!-- ── CTA banner ─────────────────────────────── -->
     <div class="cta-banner">
       <div class="cta-logo an">
-        <svg viewBox="0 0 128 128" width="84" height="84" aria-hidden="true"><g fill="none" stroke="#2BD576" stroke-width="10" stroke-linecap="round"><path d="M20 88 H108"/><path d="M20 88 A44 44 0 0 1 108 88"/><path d="M35 88 A29 29 0 0 1 93 88"/><path d="M50 88 A14 14 0 0 1 78 88"/></g></svg>
+        <svg viewBox="0 0 128 128" width="84" height="84" aria-hidden="true"><g fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round"><path d="M20 88 H108"/><path d="M20 88 A44 44 0 0 1 108 88"/><path d="M35 88 A29 29 0 0 1 93 88"/><path d="M50 88 A14 14 0 0 1 78 88"/></g></svg>
       </div>
       <div class="cta-title" data-i18n="cta_title">Open the web.</div>
       <div class="cta-btns">
@@ -949,7 +954,6 @@
   const iconOn     = document.getElementById('iconOn');
   const tilesEl    = document.getElementById('tiles');
   const glow       = document.getElementById('glow');
-  const G = '#2BD576';
 
   // Build tile elements
   const tileEls = SITES.map(function (site) {
@@ -984,7 +988,7 @@
 
     // status
     var t = window.I18N[currentLang] || window.I18N.en;
-    statusText.style.color = open ? G : '';
+    statusText.classList.toggle('connected', open);
     statusText.textContent = open ? t.mockup_status_on : (conn ? t.mockup_status_connecting : t.mockup_status_off);
     statusSub.textContent  = open ? t.mockup_sub_on    : (conn ? t.mockup_sub_connecting    : t.mockup_sub_off);
 
@@ -1026,7 +1030,7 @@
     var t = window.I18N[currentLang] || window.I18N.en;
     var open = phase === 'open';
     var conn = phase === 'connecting';
-    statusText.style.color = open ? G : '';
+    statusText.classList.toggle('connected', open);
     statusText.textContent = open ? t.mockup_status_on : (conn ? t.mockup_status_connecting : t.mockup_status_off);
     statusSub.textContent  = open ? t.mockup_sub_on    : (conn ? t.mockup_sub_connecting    : t.mockup_sub_off);
     connectBtn.textContent = open ? t.mockup_btn_disconnect : (conn ? t.mockup_btn_connecting : t.mockup_btn_connect);
